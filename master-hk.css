@@ -492,7 +492,8 @@ only screen and (max-device-width : 2000px){
     }
 
   .subtitlestud {
-    margin-left:.3em;
+    float: right;
+    padding-right: .3em;
     font-family: 'Source Sans Pro';
     font-weight: 600;
     color:#000;
@@ -809,6 +810,8 @@ only screen and (max-device-width : 680px){
     }
 
     .subtitlestud {
+      float: right;
+      padding-right: .3em;
       font-family: 'Source Sans Pro';
       font-weight: 600;
       color:#000;
