@@ -1,0 +1,943 @@
+body
+
+#main {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%
+}
+
+#main-student {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color: #d5d4d1;
+}
+
+
+/* MIDDLE LINE */
+
+#middle{
+  position: relative;
+  top: 0px;
+  width: 100%;
+  float: left;
+}
+
+#keycontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#key-student{
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 88%;
+  background-color: #fff;
+  z-index: 85;
+}
+
+#keycase{
+  position: absolute;
+  margin: auto;
+  top:0px;
+  left:0px;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+  z-index: 89;
+}
+
+#carouselcont{
+  box-sizing: border-box;
+  display: block;
+  padding: 1em;
+}
+
+#keycasesplash{
+  position: absolute;
+  margin: auto;
+  top:0px;
+  left:0px;
+  width: 99%;
+  padding: 2em;
+  text-align: center;
+  z-index: 89;
+}
+
+#keycase-student{
+  position: absolute;
+  display: inline;
+  margin: auto;
+  top:4px;
+  left:4px;
+  right: 4px;
+  bottom: 4px;
+  width: 99%;
+  z-index: 89;
+  overflow: hidden;
+}
+
+.fakepos{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.fakepos2{
+  position: absolute;
+  top: 300px;
+}
+
+.link-ort-student{
+  color:#55565c;
+}
+
+.carousel-capt-title{
+  font-weight: 700;
+  font-size: 1em;
+  color: #000;
+  z-index: 99;
+}
+
+.carousel-capt-txt{
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.carousel-control-prev {
+  opacity: 100%;
+  position: absolute;
+  top:50%;
+  width: 9% !important;
+  text-align: center;
+}
+
+.carousel-control-next {
+  opacity: 100%;
+  position: absolute;
+  top:50%;
+  width: 9% !important;
+  text-align: center;
+}
+
+#room {
+  position: relative;
+  margin: auto;
+  width:99.5%;
+  height: 98%;
+  border: 4px solid black;
+  top:0px;
+  left:0px;
+  z-index: 88;
+}
+
+#room-student {
+  position: relative;
+  margin: auto;
+  width: 99.5%;
+  top:0px;
+  left:0px;
+  z-index: 88;
+}
+
+
+/* GROUND LINE */
+
+#bottom{
+  position:relative;
+
+  width: 100%;
+
+
+}
+
+#ground{
+  position: relative;
+  float: left;
+  width: 80%;
+}
+
+#ground-student{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+}
+
+ul.namelist li {
+  display:inline;
+}
+
+
+#groundtextthesis{
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  float: center;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1em;
+  font-family: 'Source Sans Pro';
+}
+
+#groundtext-ort{
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  overflow-x: hidden;
+  float: center;
+  width: 102%;
+  padding-left: .5em;
+  padding-top: 2.1em;
+  padding-bottom: 3em;
+}
+
+#groundstudlinks{
+  position: relative;
+  text-align: left;
+  padding-bottom: .8em;
+  font-family: 'Source Sans Pro';
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.eng{
+  color: #777;
+  font-style: oblique;
+}
+
+/* Overlay single works */
+
+.overlayframe {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 98%;
+  background-color: #282c33;
+  z-index: 90;
+}
+
+.overlay-student{
+  position: relative;
+  float: left;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.overlay-close{
+  position: relative;
+  float: right;
+}
+
+.overlay-title{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.overlay-content{
+  width: 100%;
+  padding-top: 3em;
+  margin: auto;
+}
+
+.overlay-element{
+  width: 100%;
+  margin: auto;
+}
+
+.overlay-pdf{
+  width: 100%;
+  border: 0px;
+  margin: auto;
+}
+
+.overlay-description{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.overlay-caption{
+  padding-top: .5em;
+  font-size: .8em;
+  font-weight: 300;
+}
+
+
+/* .overlay-ort{
+  position: relative;
+  float: right;
+  padding-top: 1em;
+  font-size: 1.5em;
+} */
+
+
+/* footer */
+
+#footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font-family:'Source Sans Pro';
+  font-size: .7em;
+  padding-top: 2em;
+  padding-bottom: .5em;
+}
+
+
+/* GENERAL STYLES */
+
+.spacename {
+  padding-left: 0em;
+}
+
+.spacenamein {
+  padding-left: 0.3em;
+}
+
+.whitetxt {
+  color: white;
+}
+
+
+a.externlink[href^="http://"]:after,
+a.externlink[href^="https://"]:after {
+	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+  	margin: 0 0 0 5px;
+}
+
+
+a.linkund:link {
+	text-decoration:underline;
+  color: black;
+}
+
+a.linkund:visited {
+	text-decoration:underline;
+  color: black;
+}
+
+a.linkund:hover {
+	text-decoration:underline;
+  color: #777;
+}
+
+a.linkund:active {
+	text-decoration:underline;
+  color: #777;
+}
+
+
+
+a.linkoverlay:link {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+a.linkoverlay:visited {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+a.linkoverlay:hover {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+a.linkoverlay:active {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+
+
+a.linknames:link {
+	text-decoration:none;
+  color: black;
+}
+
+a.linknames:visited {
+	text-decoration:none;
+  color: black;
+}
+
+a.linknames:hover {
+	text-decoration:none;
+  color: #777;
+}
+
+a.linknames:active {
+	text-decoration:none;
+  color: #777;
+}
+
+
+
+a.linkrooms:link {
+	text-decoration:none;
+  color: white;
+}
+
+a.linkrooms:visited {
+	text-decoration:none;
+  color: white;
+}
+
+a.linkrooms:hover {
+	text-decoration:none;
+  color: white;
+}
+
+a.linkrooms:active {
+	text-decoration:none;
+  color: white;
+}
+
+
+
+a.linkstudent:link {
+	text-decoration:none;
+  color: #55565c;
+}
+
+a.linkstudent:visited {
+	text-decoration:none;
+  color: #55565c;
+}
+
+a.linkstudent:hover {
+	text-decoration:none;
+  color: #55565c;
+}
+
+a.linkstudent:active {
+	text-decoration:none;
+  color: #55565c;
+}
+
+
+/* Mediaquery 2000 px ----------------------------------------------- */
+
+@media only screen and (max-width : 2000px),
+only screen and (max-device-width : 2000px){
+
+  #top-hotel{
+    margin: auto;
+    top: 0px;
+    width: 89%;
+  }
+
+  #title-hotel {
+    padding-top: .4em;
+    margin-left: 1em;
+    height: 3.5em;
+  }
+
+  .title {
+    font-family: 'Abril Fatface';
+    color:#000;
+    font-size: 2em;
+    }
+
+  .subtitle {
+    font-family: 'Abril Fatface';
+    color:#000;
+    font-size: 2em;
+    }
+
+  .arrow {
+    font-family: sans-serif;
+    color:#000;
+    font-size: 1.8em;
+    line-height: 1em;
+    }
+
+    .spacename {
+      padding-left: 2em;
+    }
+
+    #corner-top-left {
+      position: absolute;
+      top:0px;
+      left: -2px;
+      width: 6.8%;
+      height: 3.8em;
+      z-index: 70;
+    }
+
+    #corner-top-right {
+      position: absolute;
+      top:0px;
+      right: 0px;
+      width: 6.8%;
+      height: 3.75em;
+      z-index: 70;
+    }
+
+    #key{
+      position: relative;
+      text-align: center;
+      float: left;
+      width: 88%;
+      background-color: #000;
+      z-index: 85;
+
+      overflow: hidden;
+      padding-top: calc(2/3 * 88%);
+    }
+
+    #keycasestud{
+      position: absolute;
+      display: inline;
+      margin: auto;
+      top:4px;
+      left:4px;
+      right: 4px;
+      bottom: 4px;
+      width: 99%;
+      z-index: 89;
+      overflow: hidden;
+    }
+
+  .rooms {
+    font-size: 3em;
+    letter-spacing: 0.03em;
+    line-height: 3em;
+    font-family: 'Zilla Slab';
+    font-weight: 500;
+    margin-right: .3em;
+    margin-left: .3em;
+    padding: 0.3em;
+    color: white;
+    background-color: #282c33;
+  }
+
+  .splash {
+    font-size: 2em;
+    line-height: 1.8em;
+    font-family: 'Zilla Slab';
+    font-weight: 500;
+    color: black;
+  }
+
+  #mar-left {
+    position: relative;
+    overflow: visible;
+    top: 18em;
+    float: left;
+    width: 6%;
+    text-align: right;
+  }
+
+  #mar-right {
+    position: relative;
+    overflow: visible;
+    top: 14em;
+    float: right;
+    right: 0px;
+    width: 6%;
+    text-align: left;
+  }
+
+  #txtleft {
+    font-family: 'Abril Fatface';
+    font-size: 2em;
+    transform: rotate(-90deg);
+    }
+
+  #txtright {
+    font-family: 'Abril Fatface';
+    font-size: 2em;
+    transform: rotate(90deg);
+  }
+
+  .names {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    transform: perspective(100px) scaleY(2) rotateX(25deg);
+    transform-style: preserve-3d;
+  }
+
+
+  #groundnames{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: hidden;
+    float: left;
+    width: 95%;
+    padding-top: 1.3em;
+    padding-right: 1.5em;
+    z-index: 91;
+  }
+
+  .carousel-capt {
+    position: relative;
+    bottom: -1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    height: 7em;
+  }
+
+  #groundtext{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    float: center;
+    width: 100%;
+    padding-left: .5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  #corner-down-left {
+    position: relative;
+    float: left;
+    top: -.3em;
+    width: 6.7%;
+    height: 4.3em;
+    z-index: 70;
+  }
+
+  #corner-down-right {
+    position: relative;
+    float: right;
+    top: -.3em;
+    width: 6.7%;
+    height: 4.3em;
+    z-index: 70;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    right: 2em;
+    max-height: 100%;
+    font-family: 'Source Sans Pro';
+    opacity: 100%;
+    color: #cbc7cc;
+    z-index: 91;
+    padding: 1em;
+  }
+
+}
+
+/* Mediaquery 960 px ----------------------------------------------- */
+@media only screen and (max-width : 960px),
+only screen and (max-device-width : 960px){
+
+  #title-hotel {
+    padding-top: .4em;
+    margin-left: 1em;
+    height: 3.5em;
+  }
+
+  .rooms {
+    font-size: 2.2em;
+    line-height: 2.6em;
+    margin-right: .2em;
+    margin-left: .2em;
+    padding: 0.3em;
+    color: white;
+    background-color: #282c33;
+  }
+
+  .splash {
+    font-size: 2em;
+    line-height: 1.8em;
+    font-family: 'Zilla Slab';
+    color: black;
+  }
+
+  .spacename {
+    padding-left: 1em;
+  }
+
+  #mar-left {
+    position: relative;
+    overflow: visible;
+    top: 14em;
+    float: left;
+    width: 6%;
+    text-align: right;
+  }
+
+  #mar-right {
+    position: relative;
+    overflow: visible;
+    top: 7em;
+    float: right;
+    right: 0px;
+    width: 6%;
+    text-align: left;
+  }
+
+  #txtleft {
+    font-family: 'Abril Fatface';
+    font-size: 2.5em;
+    transform: rotate(-90deg);
+
+  }
+
+  #txtright {
+    font-family: 'Abril Fatface';
+    font-size: 2.5em;
+    transform: rotate(90deg);
+  }
+
+
+  .names {
+    text-align: center;
+    font-family: arial;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    transform: perspective(100px) scaleY(2) rotateX(25deg);
+    transform-style: preserve-3d;
+  }
+
+  #groundnames{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: hidden;
+    float: left;
+    width: 95%;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    z-index: 81;
+  }
+
+  #groundtext{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    float: center;
+    width: 100%;
+    padding-left: .5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+
+/* Mediaquery 680 px ----------------------------------------------- */
+@media only screen and (max-width : 680px),
+only screen and (max-device-width : 680px){
+
+  #top-hotel{
+    margin: auto;
+    top: 0px;
+    width: 89%;
+  }
+
+  #title-hotel {
+    padding-top: 0em;
+    margin-left: 1.5em;
+    height: 2.1em;
+  }
+
+  .title {
+    font-family: 'Abril Fatface';
+    color:#000;
+    font-size: 1.5em;
+    }
+
+  .subtitle {
+    font-family: 'Abril Fatface';
+    color:#000;
+    font-size: 1.5em;
+    }
+
+    .arrow {
+      font-family: sans-serif;
+      color:#000;
+      font-size: 1.5em;
+      line-height: 1em;
+    }
+
+    #corner-top-left {
+      position: absolute;
+      top:0px;
+      left: -2px;
+      width: 9%;
+      height: 2.32em;
+      z-index: 70;
+    }
+
+    #corner-top-right {
+      position: absolute;
+      top:0px;
+      right: 0px;
+      width: 8.6%;
+      height: 2.33em;
+      z-index: 70;
+    }
+
+    #key{
+      position: relative;
+      text-align: center;
+      float: left;
+      width: 84%;
+      background-color: #000;
+      z-index: 85;
+
+      overflow: hidden;
+      padding-top: calc(2/3 * 84%);
+    }
+
+    #keycasestud{
+      position: absolute;
+      display: inline;
+      margin: auto;
+      top:3px;
+      left:3px;
+      right: 3px;
+      bottom: 3px;
+      width: 98%;
+      z-index: 89;
+      overflow: hidden;
+    }
+
+  .rooms {
+    font-size: 1.7em;
+    line-height: 2em;
+    margin-right: .1em;
+    margin-left: .1em;
+    padding: 0.1em;
+    color: white;
+    background-color: #282c33;
+  }
+
+  .splash {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-family: 'Zilla Slab';
+    padding: 0em;
+    color: black;
+  }
+
+  #mar-left {
+    position: relative;
+    overflow: visible;
+    top: 10em;
+    float: left;
+    width: 8%;
+    text-align: right;padding-top: .4em;
+  }
+
+  #mar-right {
+    position: relative;
+    overflow: visible;
+    top: 5em;
+    float: right;
+    right: 0px;
+    width: 8%;
+    text-align: left;
+  }
+
+  #txtleft {
+    font-family: 'Abril Fatface';
+    font-size: 1.5em;
+    transform: rotate(-90deg);
+  }
+
+  #txtright {
+    font-family: 'Abril Fatface';
+    font-size: 1.5em;
+    transform: rotate(90deg);
+  }
+
+  .names {
+    text-align: center;
+    font-family: arial;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    transform: perspective(100px) scaleY(2) rotateX(25deg);
+  }
+
+  #groundnames{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    width: 90%;
+    padding-top: 1.7em;
+    padding-right: 0.2em;
+    z-index: 91;
+  }
+
+  .carousel-capt {
+    position: relative;
+    bottom: -1em;
+    height: 8em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+  }
+
+  #groundtext{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: hidden;
+    float: center;
+    width: 100%;
+    padding-left: .5em;
+    padding-top: 4.5em;
+    padding-bottom: 3em;
+  }
+
+  #corner-down-left {
+    position: relative;
+    float: left;
+    top: -.3em;
+    width: 8.8%;
+    height: 2.6em;
+    z-index: 70;
+  }
+
+  #corner-down-right {
+    position: relative;
+    float: right;
+    top: -.3em;
+    width: 8.8%;
+    height: 2.6em;
+    z-index: 70;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    font-family: 'Source Sans Pro';
+    opacity: 100%;
+    color: white;
+    z-index: 91;
+    padding: 1em;
+  }
+}
+/* Fin Mediaquery  ----------------------------------------------- */
