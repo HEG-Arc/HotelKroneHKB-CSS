@@ -396,21 +396,25 @@ a.linkoverlay:active {
 a.linknames:link {
 	text-decoration:none;
   color: black;
+  white-space: nowrap
 }
 
 a.linknames:visited {
 	text-decoration:none;
   color: black;
+  white-space: nowrap
 }
 
 a.linknames:hover {
 	text-decoration:none;
   color: #777;
+  white-space: nowrap
 }
 
 a.linknames:active {
 	text-decoration:none;
   color: #777;
+  white-space: nowrap
 }
 
 
