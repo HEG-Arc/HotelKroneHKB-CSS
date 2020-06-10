@@ -297,6 +297,19 @@ body
   padding-bottom: .5em;
 }
 
+/* MODAL IMPRESSUM */
+
+.modal {
+  opacity: 98%;
+  background-color: #282c33;
+}
+.modal-content {
+  color: #cbc7cc;
+  opacity: 98%;
+  background-color: #282c33;
+  background-clip: padding-box;
+  border: none;
+}
 
 /* GENERAL STYLES */
 
