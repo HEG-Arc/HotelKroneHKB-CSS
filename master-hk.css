@@ -33,7 +33,7 @@ body
   background-color: #000;
   z-index: 85;
   overflow: hidden;
-  padding-top: calc(2/3 * 76%);
+  padding-top: calc(2/3 * 88%);
   border: 4px solid black;
 }
 
@@ -149,6 +149,26 @@ body
   top:0px;
   left:0px;
   z-index: 88;
+}
+
+#mar-right {
+  position: relative;
+  overflow: visible;
+  float: right;
+  right: 0px;
+  width: 6%;
+  text-align: left;
+  padding-top: calc(2/3 * 88%);
+}
+
+#mar-left {
+  position: relative;
+  overflow: visible;
+  float: left;
+  right: 0px;
+  width: 6%;
+  text-align: left;
+  padding-top: calc(2/3 * 88%);
 }
 
 
@@ -551,35 +571,22 @@ only screen and (max-device-width : 2000px){
     color: black;
   }
 
-  #mar-left {
-    position: relative;
-    overflow: visible;
-    top: 18em;
-    float: left;
-    width: 6%;
-    text-align: right;
-  }
-
-  #mar-right {
-    position: relative;
-    overflow: visible;
-    top: 14em;
-    float: right;
-    right: 0px;
-    width: 6%;
-    text-align: left;
-  }
-
   #txtleft {
     font-family: 'Abril Fatface';
     font-size: 2em;
-    transform: rotate(-90deg);
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+  }
 
   #txtright {
     font-family: 'Abril Fatface';
     font-size: 2em;
-    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg)
   }
 
   #groundnames{
@@ -772,6 +779,18 @@ only screen and (max-device-width : 680px){
     margin-left: 1.5em;
     height: 2.1em;
   }
+
+#key{
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 84%;
+  background-color: #000;
+  z-index: 85;
+  overflow: hidden;
+  padding-top: calc(2/3 * 84%);
+  border: 4px solid black;
+}
 
   .title {
     font-family: 'Abril Fatface';
