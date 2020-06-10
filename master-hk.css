@@ -25,12 +25,25 @@ body
   float: left;
 }
 
+#key{
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 88%;
+  background-color: #000;
+  z-index: 85;
+  overflow: hidden;
+  padding-top: calc(2/3 * 76%);
+  border: 4px solid black;
+}
+
+
 #keycontent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #keycase{
@@ -124,7 +137,6 @@ body
   margin: auto;
   width:99.5%;
   height: 98%;
-  border: 4px solid black;
   top:0px;
   left:0px;
   z-index: 88;
@@ -483,18 +495,6 @@ only screen and (max-device-width : 2000px){
       z-index: 70;
     }
 
-    #key{
-      position: relative;
-      text-align: center;
-      float: left;
-      width: 88%;
-      background-color: #000;
-      z-index: 85;
-      /* height: 0; */
-      overflow: hidden;
-      padding-top: calc(2/3 * 88%);
-    }
-
     #key-student{
       position: relative;
       text-align: center;
@@ -802,18 +802,6 @@ only screen and (max-device-width : 680px){
       width: 8.6%;
       height: 2.33em;
       z-index: 70;
-    }
-
-    #key{
-      position: relative;
-      text-align: center;
-      float: left;
-      width: 84%;
-      background-color: #000;
-      z-index: 85;
-      /* height: 0; */
-      overflow: hidden;
-      padding-top: calc(2/3 * 84%);
     }
 
     #key-student{
