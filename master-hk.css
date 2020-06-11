@@ -29,12 +29,12 @@ body
   position: relative;
   text-align: center;
   float: left;
-  width: 88%;
+  width: 87.5%;
   background-color: #000;
   z-index: 85;
   overflow: hidden;
-  padding-top: calc(2/3 * 88%);
-  border: 4px solid black;
+  padding-top: calc(2/3 * 87.5%);
+  border: 3px solid black;
 }
 
 
@@ -87,23 +87,9 @@ body
   overflow: hidden;
 }
 
-.fakepos{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.fakepos2{
-  position: absolute;
-  top: 300px;
-}
-
-.link-ort-student{
-  color:#55565c;
-}
 
 .carousel-capt-title{
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1em;
   color: #000;
   z-index: 99;
@@ -119,7 +105,7 @@ body
 .carousel-control-prev {
   opacity: 100%;
   position: absolute;
-  top:50%;
+  top:-40px;
   width: 9% !important;
   text-align: center;
 }
@@ -127,7 +113,7 @@ body
 .carousel-control-next {
   opacity: 100%;
   position: absolute;
-  top:50%;
+  top:-40px;
   width: 9% !important;
   text-align: center;
 }
@@ -135,11 +121,11 @@ body
 #room {
   position: relative;
   margin: auto;
-  width:99.5%;
-  height: 98%;
+  width:100%;
+  height:100%;
   top:0px;
   left:0px;
-  z-index: 88;
+  z-index: 80;
 }
 
 #room-student {
@@ -149,26 +135,6 @@ body
   top:0px;
   left:0px;
   z-index: 88;
-}
-
-#mar-right {
-  position: relative;
-  overflow: visible;
-  float: right;
-  right: 0px;
-  width: 6%;
-  text-align: left;
-  padding-top: calc(2/3 * 88%);
-}
-
-#mar-left {
-  position: relative;
-  overflow: visible;
-  float: left;
-  right: 0px;
-  width: 6%;
-  text-align: left;
-  padding-top: calc(2/3 * 88%);
 }
 
 
@@ -209,6 +175,9 @@ body
   padding-left: .5em;
   padding-top: 2.1em;
   padding-bottom: 3em;
+  font-family: 'Source Sans Pro';
+  font-size: 1em;
+  font-weight: 500;
 }
 
 #groundstudlinks{
@@ -218,11 +187,6 @@ body
   font-family: 'Source Sans Pro';
   font-size: .8em;
   font-weight: 400;
-}
-
-.eng{
-  color: #777;
-  font-style: oblique;
 }
 
 /* Overlay single works */
@@ -241,25 +205,27 @@ body
 .overlay-student{
   position: relative;
   float: left;
-  font-size: 1em;
-  font-weight: 600;
+  padding-right: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.overlay-title{
+  position: relative;
+  float: left;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .overlay-close{
   position: relative;
   float: right;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.overlay-title{
-  font-size: 1.5em;
-  font-weight: 400;
+  width:20px;
 }
 
 .overlay-content{
   width: 100%;
-  padding-top: 3em;
+  padding-top: 4em;
   margin: auto;
 }
 
@@ -277,6 +243,7 @@ body
 .overlay-description{
   font-size: 1em;
   font-weight: 400;
+  margin-bottom: 2em;
 }
 
 .overlay-caption{
@@ -284,23 +251,6 @@ body
   font-size: .8em;
   font-weight: 300;
 }
-
-.overlay-arrow{
-  padding-left: .4em;
-  padding-right: .4em;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  line-height: 1.3em;
-}
-
-
-/* .overlay-ort{
-  position: relative;
-  float: right;
-  padding-top: 1em;
-  font-size: 1.5em;
-} */
-
 
 /* footer */
 
@@ -341,10 +291,32 @@ body
   color: #d5d4d1;
 }
 
+.spacename {
+  padding-right: .5em;
+}
+
+.link-ort-student{
+  color:#55565c;
+}
+
+.eng{
+  color: #777;
+  font-style: oblique;
+}
+
+ul.namelist li {
+  display:inline;
+}
+
+.spacenamein {
+  padding-right: 0.4em;
+}
+
+/* LINK STYLES */
 
 a.externlink[href^="http://"]:after,
 a.externlink[href^="https://"]:after {
-	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+	content: url('/media/icon_external_link.png');
   	margin: 0 0 0 5px;
 }
 
@@ -372,12 +344,12 @@ a.linkund:active {
 
 
 a.linkoverlay:link {
-	text-decoration:none;
+	text-decoration:underline;
   color: #cbc7cc;
 }
 
 a.linkoverlay:visited {
-	text-decoration:none;
+	text-decoration:underline;
   color: #cbc7cc;
 }
 
@@ -387,7 +359,7 @@ a.linkoverlay:hover {
 }
 
 a.linkoverlay:active {
-	text-decoration:none;
+	text-decoration:underline;
   color: #cbc7cc;
 }
 
@@ -418,6 +390,26 @@ a.linknames:active {
 }
 
 
+a.linktitle:link {
+	text-decoration:none;
+  color: #282c33;
+}
+
+a.linktitle:visited {
+	text-decoration:none;
+  color: #282c33;
+}
+
+a.linktitle:hover {
+	text-decoration:none;
+  color: #555;
+}
+
+a.linktitle:active {
+	text-decoration:none;
+  color: #555;
+}
+
 
 a.linkrooms:link {
 	text-decoration:none;
@@ -431,12 +423,12 @@ a.linkrooms:visited {
 
 a.linkrooms:hover {
 	text-decoration:none;
-  color: white;
+  color: #687177;
 }
 
 a.linkrooms:active {
 	text-decoration:none;
-  color: white;
+  color: #687177;
 }
 
 
@@ -500,26 +492,12 @@ only screen and (max-device-width : 2000px){
     font-size: 2em;
     }
 
-  .arrow {
-    font-family: sans-serif;
-    color:#000;
-    font-size: .8em;
-    line-height: 1em;
-    }
-
-    .spacename {
-      padding-left: 2em;
-    }
-
-    /* #topline{
-      height: 3.5em;
-    } */
 
     #corner-top-left {
       position: absolute;
       top:0px;
       left: -2px;
-      width: 6.8%;
+      width: 6.76%;
       height: 3.8em;
       z-index: 70;
     }
@@ -528,7 +506,7 @@ only screen and (max-device-width : 2000px){
       position: absolute;
       top:0px;
       right: 0px;
-      width: 6.8%;
+      width: 6.9%;
       height: 3.75em;
       z-index: 70;
     }
@@ -555,18 +533,18 @@ only screen and (max-device-width : 2000px){
       overflow: hidden;
     }
 
-  .rooms {
-    font-size: 3em;
-    letter-spacing: 0.03em;
-    line-height: 3em;
-    font-family: 'Zilla Slab';
-    font-weight: 500;
-    margin-right: .3em;
-    margin-left: .3em;
-    padding: 0.3em;
-    color: white;
-    background-color: #282c33;
-  }
+    .rooms {
+        font-size: 4em;
+        letter-spacing: 0.03em;
+        line-height: 2em;
+        font-family: 'Source Sans Pro';
+        font-weight: 300;
+        margin-right: .3em;
+        margin-left: .3em;
+        padding: 0.3em;
+        color: white;
+        /* background-color: #282c33; */
+      }
 
   .splash {
     font-size: 2em;
@@ -574,6 +552,26 @@ only screen and (max-device-width : 2000px){
     font-family: 'Zilla Slab';
     font-weight: 500;
     color: black;
+  }
+
+  #mar-right {
+    position: relative;
+    overflow: visible;
+    float: right;
+    right: 0px;
+    width: 6%;
+    text-align: left;
+    padding-top: calc(2/3 * 88%);
+  }
+
+  #mar-left {
+    position: relative;
+    overflow: visible;
+    float: left;
+    right: 0px;
+    width: 6%;
+    text-align: left;
+    padding-top: calc(2/3 * 88%);
   }
 
   #txtleft {
@@ -602,19 +600,13 @@ only screen and (max-device-width : 2000px){
     text-align: center;
   }
 
-  ul.namelist li {
-    display:inline;
-  }
-
   .namesnew {
     font-family: 'Source Sans Pro';
     font-weight: 300;
     font-size: 1.5em;
   }
 
-  .spacenamein {
-    padding-right: 0.4em;
-  }
+
 
   .carousel-capt {
     position: relative;
@@ -630,7 +622,6 @@ only screen and (max-device-width : 2000px){
     position: relative;
     float: left;
     width: 84%;
-
   }
 
   #groundtext{
@@ -641,14 +632,16 @@ only screen and (max-device-width : 2000px){
     width: 100%;
     padding-left: 1em;
     padding-top: 4em;
-    padding-bottom: 3em;
+    padding-bottom: 3em;font-family: 'Source Sans Pro';
+    font-size: 1em;
+    font-weight: 500;
   }
 
   #corner-down-left {
     position: relative;
     float: left;
     top: -.3em;
-    width: 6.7%;
+    width: 6.5%;
     height: 4.3em;
     z-index: 70;
   }
@@ -657,7 +650,7 @@ only screen and (max-device-width : 2000px){
     position: relative;
     float: right;
     top: -.3em;
-    width: 6.7%;
+    width: 6.9%;
     height: 4.3em;
     z-index: 70;
   }
@@ -688,13 +681,13 @@ only screen and (max-device-width : 960px){
   }
 
   .rooms {
-    font-size: 2.2em;
-    line-height: 2.6em;
+    font-size: 2.6em;
+    line-height: 2.1em;
     margin-right: .2em;
     margin-left: .2em;
     padding: 0.3em;
     color: white;
-    background-color: #282c33;
+    /* background-color: #282c33; */
   }
 
   .splash {
@@ -704,39 +697,23 @@ only screen and (max-device-width : 960px){
     color: black;
   }
 
-  .spacename {
-    padding-left: 1em;
-  }
-
-  #mar-left {
-    position: relative;
-    overflow: visible;
-    top: 14em;
-    float: left;
-    width: 6%;
-    text-align: right;
-  }
-
-  #mar-right {
-    position: relative;
-    overflow: visible;
-    top: 7em;
-    float: right;
-    right: 0px;
-    width: 6%;
-    text-align: left;
-  }
 
   #txtleft {
     font-family: 'Abril Fatface';
     font-size: 1.8em;
-    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg)
   }
 
   #txtright {
     font-family: 'Abril Fatface';
     font-size: 1.8em;
-    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg)
   }
 
   #groundnames{
@@ -794,7 +771,7 @@ only screen and (max-device-width : 680px){
   z-index: 85;
   overflow: hidden;
   padding-top: calc(2/3 * 84%);
-  border: 4px solid black;
+  border: 3px solid black;
 }
 
   .title {
@@ -818,12 +795,6 @@ only screen and (max-device-width : 680px){
       font-size: 1.4em;
       }
 
-    .arrow {
-      font-family: sans-serif;
-      color:#000;
-      font-size: .9em;
-      line-height: .9em;
-    }
 
     #corner-top-left {
       position: absolute;
@@ -866,13 +837,13 @@ only screen and (max-device-width : 680px){
     }
 
   .rooms {
-    font-size: 1.7em;
-    line-height: 2em;
+    font-size: 1.9em;
+    line-height: 1.6em;
     margin-right: .1em;
     margin-left: .1em;
     padding: 0.1em;
     color: white;
-    background-color: #282c33;
+    /* background-color: #282c33; */
   }
 
   .splash {
@@ -883,46 +854,44 @@ only screen and (max-device-width : 680px){
     color: black;
   }
 
-  #mar-left {
-    position: relative;
-    overflow: visible;
-    top: 10em;
-    float: left;
-    width: 8%;
-    text-align: right;padding-top: .4em;
-  }
-
   #mar-right {
     position: relative;
     overflow: visible;
-    top: 5em;
     float: right;
     right: 0px;
     width: 8%;
     text-align: left;
+    padding-top: calc(2/3 * 84%);
+  }
+
+  #mar-left {
+    position: relative;
+    overflow: visible;
+    float: left;
+    right: 0px;
+    width: 8%;
+    text-align: left;
+    padding-top: calc(2/3 * 84%);
   }
 
   #txtleft {
     font-family: 'Abril Fatface';
     font-size: 1.5em;
-    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg)
   }
 
   #txtright {
     font-family: 'Abril Fatface';
     font-size: 1.5em;
-    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg)
   }
 
-  .names {
-    text-align: center;
-    font-family: arial;
-    font-weight: 800;
-    font-size: 1em;
-    line-height: 1em;
-    letter-spacing: 0.03em;
-    transform: perspective(100px) scaleY(2) rotateX(25deg);
-  }
 
   #groundnames{
     position: relative;
@@ -971,7 +940,7 @@ only screen and (max-device-width : 680px){
     position: relative;
     float: left;
     top: -.3em;
-    width: 8.8%;
+    width: 8.96%;
     height: 2.6em;
     z-index: 70;
   }
@@ -980,7 +949,7 @@ only screen and (max-device-width : 680px){
     position: relative;
     float: right;
     top: -.3em;
-    width: 8.8%;
+    width: 8.96%;
     height: 2.6em;
     z-index: 70;
   }
@@ -995,6 +964,26 @@ only screen and (max-device-width : 680px){
     color: #cbc7cc;
     z-index: 91;
     padding: 1em;
+  }
+
+  .overlay-close{
+    position: relative;
+    float: right;
+    width:14px;
+  }
+
+  .overlay-student{
+    position: relative;
+    padding-right: 1em;
+    float: left;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .overlay-title{
+    float: left;
+    font-size: 1em;
+    font-weight: 400;
   }
 }
 /* Fin Mediaquery  ----------------------------------------------- */
