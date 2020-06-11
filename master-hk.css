@@ -456,6 +456,9 @@ a.linkstudent:active {
   color: #55565c;
 }
 
+.cursor-lea {
+  cursor: url('/media/cursor-lea.png'), auto;
+}
 
 /* Mediaquery 2000 px ----------------------------------------------- */
 
