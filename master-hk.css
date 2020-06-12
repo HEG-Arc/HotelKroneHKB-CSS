@@ -457,7 +457,12 @@ a.linkstudent:active {
 }
 
 .cursor-lea {
-  cursor: url('/media/cursor-lea.png'), auto;
+  /* cursor: url('/media/cursor-lea.png'), auto; */
+  cursor: help;
+}
+
+img#backgroundIMG {
+  height: 100%;
 }
 
 /* Mediaquery 2000 px ----------------------------------------------- */
