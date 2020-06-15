@@ -458,7 +458,8 @@ a.linkstudent:active {
 
 .cursor-lea {
   /* cursor: url('/media/cursor-lea.png'), auto; */
-  cursor: help;
+  cursor: url('/media/cursor-lea.png'), auto; 
+  /* cursor: help; */
 }
 
 img#backgroundIMG {
