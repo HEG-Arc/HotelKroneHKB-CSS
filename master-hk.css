@@ -259,6 +259,25 @@ body
 .overlay-image {
   width: 100%;
 }
+
+
+#impressum .overlay-title{
+  float: inherit;
+}
+
+#program .overlay-title{
+  float: inherit;
+}
+
+div#program.overlayframe {
+    position: fixed;
+    overflow-y: auto;
+    width: 50%;
+    height: 70%;
+    left: 25%;
+    top: 15%;
+}
+
 /* footer */
 
 #footer {
