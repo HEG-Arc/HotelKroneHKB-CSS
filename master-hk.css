@@ -262,20 +262,20 @@ body
 
 
 #impressum .overlay-title{
-  float: inherit;
+   float: inherit;
 }
 
 #program .overlay-title{
-  float: inherit;
+   float: inherit;
 }
 
 div#program.overlayframe {
-    position: fixed;
-    overflow-y: auto;
-    width: 50%;
-    height: 70%;
-    left: 25%;
-    top: 15%;
+   position: fixed;
+   overflow-y: auto;
+   width: 50%;
+   height: 70%;
+   left: 25%;
+   top: 15%;
 }
 
 /* footer */
