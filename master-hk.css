@@ -189,7 +189,7 @@ body
   font-weight: 400;
 }
 
-/* Overlay single works */
+/* Overlay single works, impressum, program */
 
 .overlayframe {
   position: fixed;
@@ -198,32 +198,48 @@ body
   left: 0px;
   width: 100%;
   height: 100%;
-  opacity: 98%;
   background-color: #282c33;
   z-index: 90;
 }
 
-.noscroll { overflow: hidden; }
+.overlay {
+  position: absolute;
+  top: .5em;
+  left: 1em;
+  right: 1em;
+  max-height: 100%;
+  font-family: 'Source Sans Pro';
+  opacity: 100%;
+  color: #cbc7cc;
+  z-index: 91;
+  padding: 1em;
+}
+
+.noscroll {
+  overflow: hidden;
+}
 
 .overlay-student{
   position: relative;
   float: left;
   padding-right: 1em;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .overlay-title{
   position: relative;
   float: left;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 300;
+  letter-spacing: .01em;
 }
 
 .overlay-close{
   position: relative;
   float: right;
-  width:20px;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 .overlay-content{
@@ -234,14 +250,18 @@ body
 
 .overlay-element{
   opacity: 100%;
+  padding-top: 2em;
   width: 100%;
   margin: auto;
 }
 
-.overlay-pdf{
+.overlay-caption{
+  padding-top: 3em;
   width: 100%;
-  border: 0px;
-  margin: auto;
+  text-align: center;
+  font-size: .8em;
+  font-weight: 300;
+  letter-spacing: .01em;
 }
 
 .overlay-description{
@@ -250,32 +270,86 @@ body
   margin-bottom: 2em;
 }
 
-.overlay-caption{
-  padding-top: .5em;
-  font-size: .8em;
-  font-weight: 300;
-}
-
 .overlay-image {
   width: 100%;
 }
 
+.carousel-overlay-capt {
+  position: relative;
+  bottom: 0em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  height: 3em;
+}
+
+.carousel-control-top {
+  top:0px;
+}
+
+.program-title{
+position: relative;
+float: left;
+font-family: 'Abril Fatface';
+font-size: 2em;
+font-weight: 300;
+letter-spacing: .01em;
+}
+
+.program-container {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  right: .5em;
+  max-height: 100%;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+  opacity: 100%;
+  color: white;
+  z-index: 91;
+  padding: 1em;
+}
+
+.program{
+  width: 100%;
+  padding-top: 1.5em;
+  margin: auto;
+}
+
+.program-close{
+  position: relative;
+  float: right;
+  font-family: 'Abril Fatface';
+  font-size: 1.3em;
+  font-weight: 300;
+}
 
 #impressum .overlay-title{
    float: inherit;
 }
 
-#program .overlay-title{
+#program .program-title{
    float: inherit;
 }
 
-div#program.overlayframe {
+.program-description{
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+
+div#program {
    position: fixed;
    overflow-y: auto;
-   width: 50%;
-   height: 70%;
-   left: 25%;
-   top: 15%;
+   width: 70%;
+   height: 60%;
+   left: 15%;
+   top: 12%;
+   color: white;
+   background: rgb(187,10,52);
+background: linear-gradient(-225deg, rgba(187,10,52,1) 0%, rgba(121,9,94,1) 35%, rgba(5,166,199,1) 100%);
+   z-index: 99;
 }
 
 /* footer */
@@ -390,6 +464,27 @@ a.linkoverlay:active {
 }
 
 
+a.linkoverlayclose:link {
+	text-decoration:none;
+  color: #cbc7cc;
+}
+
+a.linkoverlayclose:visited {
+	text-decoration:none;
+  color: #cbc7cc;
+}
+
+a.linkoverlayclose:hover {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+a.linkoverlayclose:active {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+
 
 a.linknames:link {
 	text-decoration:none;
@@ -481,7 +576,7 @@ a.linkstudent:active {
 
 .cursor-lea {
   /* cursor: url('/media/cursor-lea.png'), auto; */
-  cursor: url('/media/cursor-lea.png'), auto; 
+  cursor: url('/media/cursor-lea.png'), auto;
   /* cursor: help; */
 }
 
@@ -489,15 +584,7 @@ img#backgroundIMG {
   height: 100%;
 }
 
-.carousel-overlay-capt {
-  position: relative;
-  bottom: 0em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-align: center;
-  font-family: 'Source Sans Pro';
-  height: 3em;
-}
+
 
 /* Mediaquery 2000 px ----------------------------------------------- */
 
@@ -553,7 +640,7 @@ only screen and (max-device-width : 2000px){
       right: 0px;
       width: 6.9%;
       height: 3.75em;
-      z-index: 70;
+      z-index: -1;
     }
 
     #key-student{
@@ -700,19 +787,6 @@ only screen and (max-device-width : 2000px){
     z-index: 70;
   }
 
-  .overlay {
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    right: 2em;
-    max-height: 100%;
-    font-family: 'Source Sans Pro';
-    opacity: 100%;
-    color: #cbc7cc;
-    z-index: 91;
-    padding: 1em;
-  }
-
 }
 
 /* Mediaquery 960 px ----------------------------------------------- */
@@ -856,7 +930,7 @@ only screen and (max-device-width : 680px){
       right: 0px;
       width: 8.6%;
       height: 2.33em;
-      z-index: 70;
+      z-index: -1;
     }
 
     #key-student{
@@ -1014,7 +1088,7 @@ only screen and (max-device-width : 680px){
   .overlay-close{
     position: relative;
     float: right;
-    width:14px;
+    font-size: 1em;
   }
 
   .overlay-student{
@@ -1022,13 +1096,22 @@ only screen and (max-device-width : 680px){
     padding-right: 1em;
     float: left;
     font-size: 1em;
-    font-weight: 400;
   }
 
   .overlay-title{
     float: left;
     font-size: 1em;
-    font-weight: 400;
   }
+
+  div#program {
+     position: fixed;
+     overflow-y: auto;
+     width: 70%;
+     height: 80%;
+     left: 15%;
+     top: 10%;
+     z-index: 99;
+  }
+
 }
 /* Fin Mediaquery  ----------------------------------------------- */
