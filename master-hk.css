@@ -329,6 +329,11 @@ letter-spacing: .01em;
    float: inherit;
 }
 
+div#impressum div.overlay-element a {
+   color: #cbc7cc;
+   text-decoration: underline;
+}
+
 #program .program-title{
    float: inherit;
 }
