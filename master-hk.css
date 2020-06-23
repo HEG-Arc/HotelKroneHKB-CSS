@@ -640,7 +640,10 @@ img#backgroundIMG {
   height: 100%;
 }
 
-
+ul.intronames li {
+  padding-right: 0.7em;
+  white-space: nowrap;
+}
 
 /* Mediaquery 2000 px ----------------------------------------------- */
 
