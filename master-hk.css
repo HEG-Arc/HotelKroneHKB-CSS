@@ -199,7 +199,7 @@ body
   width: 100%;
   height: 100%;
   background-color: #282c33;
-  z-index: 90;
+  z-index: 93;
 }
 
 .overlay {
@@ -350,6 +350,62 @@ div#program {
    background: rgb(187,10,52);
 background: linear-gradient(-225deg, rgba(187,10,52,1) 0%, rgba(121,9,94,1) 35%, rgba(5,166,199,1) 100%);
    z-index: 99;
+}
+
+.overlayframe-fs {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 93;
+}
+
+.overlay-back-txt{
+  background-color: #282c33;
+}
+
+.overlay-fs{
+  position: absolute;
+  top: .1em;
+  left: .1em;
+  right: .1em;
+  max-height: 100%;
+  font-family: 'Source Sans Pro';
+  opacity: 100%;
+  color: #cbc7cc;
+}
+
+.overlay-student-fs{
+  position: relative;
+  float: left;
+  padding-left: .2em;
+  padding-right: 1em;
+  font-size: .8em;
+  font-weight: 300;
+}
+
+.overlay-title-fs{
+  position: relative;
+  float: left;
+  font-size: .8em;
+  font-weight: 300;
+  letter-spacing: .01em;
+}
+
+.overlay-close-fs{
+  position: relative;
+  float: right;
+  padding-right: .2em;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.overlay-content-fs{
+  width: 100%;
+  padding-top: 1.5em;
+  margin: auto;
 }
 
 /* footer */
