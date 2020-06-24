@@ -605,6 +605,7 @@ only screen and (max-device-width : 2000px){
     padding-left: .5em;
     padding-top: 3em;
     padding-bottom: 3em;
+    z-index: 10;
   }
 
   #corner-down-left {
@@ -736,6 +737,7 @@ only screen and (max-device-width : 960px){
     padding-left: .5em;
     padding-top: 3em;
     padding-bottom: 3em;
+    z-index: 10;
   }
 }
 
@@ -908,6 +910,7 @@ only screen and (max-device-width : 680px){
     padding-left: .5em;
     padding-top: 4.5em;
     padding-bottom: 3em;
+    z-index: 10;
   }
 
   #corner-down-left {
