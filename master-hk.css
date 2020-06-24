@@ -320,8 +320,8 @@ letter-spacing: .01em;
 .program-close{
   position: relative;
   float: right;
-  font-family: 'Abril Fatface';
-  font-size: 1.3em;
+  font-family: 'Source Sans Pro';
+  font-size: 1.5em;
   font-weight: 300;
 }
 
@@ -546,6 +546,27 @@ a.linkoverlayclose:active {
 }
 
 
+a.linkprog:link {
+	text-decoration:underline;
+  color: white;
+}
+
+a.linkprog:visited {
+	text-decoration:underline;
+  color: white;
+}
+
+a.linkprog:hover {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+a.linkprog:active {
+	text-decoration:underline;
+  color: #cbc7cc;
+}
+
+
 
 a.linknames:link {
 	text-decoration:none;
@@ -604,13 +625,13 @@ a.linkrooms:visited {
 }
 
 a.linkrooms:hover {
-	text-decoration:none;
-  color: #687177;
+	text-decoration:underline;
+  color: white;
 }
 
 a.linkrooms:active {
-	text-decoration:none;
-  color: #687177;
+	text-decoration:underline;
+  color: white;
 }
 
 
