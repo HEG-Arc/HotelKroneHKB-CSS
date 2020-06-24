@@ -687,22 +687,24 @@ a.linktitle:active {
 
 a.linkrooms:link {
 	text-decoration:none;
-  color: white;
+  color: black;
+  text-shadow: 2px 2px white;
 }
 
 a.linkrooms:visited {
 	text-decoration:none;
-  color: white;
+  color: black;
+  text-shadow: 2px 2px white;
 }
 
 a.linkrooms:hover {
-	text-decoration:underline;
-  color: white;
+  text-decoration:none;
+  color: blue;
 }
 
 a.linkrooms:active {
-	text-decoration:underline;
-  color: white;
+	text-decoration: none;
+  color: black;
 }
 
 
@@ -956,13 +958,17 @@ only screen and (max-device-width : 960px){
   }
 
   .rooms {
-    font-size: 2.6em;
-    line-height: 2.1em;
+    font-size: 3em;
+    line-height: 2em;
     margin-right: .2em;
     margin-left: .2em;
     padding: 0.3em;
     color: white;
     /* background-color: #282c33; */
+  }
+
+  #keycase{
+    padding: 1.3em;
   }
 
   .splash {
@@ -1112,13 +1118,16 @@ only screen and (max-device-width : 680px){
     }
 
   .rooms {
-    font-size: 1.9em;
-    line-height: 1.6em;
+    font-size: 2em;
+    line-height: 1.7em;
     margin-right: .1em;
     margin-left: .1em;
-    padding: 0.1em;
     color: white;
     /* background-color: #282c33; */
+  }
+
+  #keycase{
+    padding: 1.4em;
   }
 
   .splash {
@@ -1282,6 +1291,25 @@ only screen and (max-device-width : 450px){
   font-size: 1.7em;
   line-height: 1.5em;
 }
+
+.title {
+  color:#000;
+  font-size: .9em;
+  }
+
+.subtitle {
+  color:#000;
+  font-size: .9em;
+  }
+
+  .subtitlestud {
+    float: right;
+    padding-right: .3em;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    color:#000;
+    font-size: .9em;
+    }
 
 }
 /* Fin Mediaquery  ----------------------------------------------- */
