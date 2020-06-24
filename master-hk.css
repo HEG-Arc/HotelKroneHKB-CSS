@@ -1,4 +1,69 @@
-body
+/* abril-fatface-regular - latin */
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/abril-fatface-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
+       url('../fonts/abril-fatface-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/abril-fatface-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/abril-fatface-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/abril-fatface-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/abril-fatface-v11-latin-regular.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/source-sans-pro-v13-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+       url('../fonts/source-sans-pro-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-pro-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-sans-pro-v13-latin-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-sans-pro-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/source-sans-pro-v13-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),
+       url('../fonts/source-sans-pro-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-pro-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-sans-pro-v13-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/source-sans-pro-v13-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('../fonts/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-sans-pro-v13-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
 
 #main {
   position: absolute;
@@ -471,6 +536,12 @@ ul.namelist li {
 
 .spacenamein {
   padding-right: 0.4em;
+}
+
+.panolens-infospot{
+  font-family:'Source Sans Pro';
+  font-weight:500;
+  font-size: 0.9em;
 }
 
 /* LINK STYLES */
@@ -1197,6 +1268,20 @@ only screen and (max-device-width : 680px){
      top: 10%;
      z-index: 99;
   }
+
+}
+
+@media only screen and (max-width : 450px),
+only screen and (max-device-width : 450px){
+
+#keycase{
+  padding: 0.4em;
+}
+
+.rooms{
+  font-size: 1.7em;
+  line-height: 1.5em;
+}
 
 }
 /* Fin Mediaquery  ----------------------------------------------- */
