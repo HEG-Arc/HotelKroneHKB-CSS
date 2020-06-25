@@ -422,61 +422,29 @@ background: linear-gradient(-225deg, rgba(187,10,52,1) 0%, rgba(121,9,94,1) 35%,
    z-index: 99;
 }
 
-.overlayframe-fs {
-  position: fixed;
-  overflow-y: scroll;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 93;
-}
+/* fullscreen video  */
 
-.overlay-back-txt{
-  background-color: #282c33;
-}
-
-.overlay-fs{
+#keycase-video{
   position: absolute;
-  top: .1em;
-  left: .1em;
-  right: .1em;
-  max-height: 100%;
-  font-family: 'Source Sans Pro';
-  opacity: 100%;
-  color: #cbc7cc;
-}
-
-.overlay-student-fs{
-  position: relative;
-  float: left;
-  padding-left: .2em;
-  padding-right: 1em;
-  font-size: .8em;
-  font-weight: 300;
-}
-
-.overlay-title-fs{
-  position: relative;
-  float: left;
-  font-size: .8em;
-  font-weight: 300;
-  letter-spacing: .01em;
-}
-
-.overlay-close-fs{
-  position: relative;
-  float: right;
-  padding-right: .2em;
-  font-size: .9em;
-  font-weight: 700;
-}
-
-.overlay-content-fs{
-  width: 100%;
-  padding-top: 1.5em;
   margin: auto;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: 95;
 }
+
+.close-video {
+  float: right;
+  padding-right: 1em;
+  font-family: 'Abril Fatface';
+  color:#000;
+  font-size: 2em;
+  }
+
+.caption-video {
+  font-size: .7em;
+}
+
 
 /* footer */
 
@@ -1076,6 +1044,10 @@ only screen and (max-device-width : 680px){
       font-size: 1.4em;
       }
 
+    .close-video {
+      font-size: 1.4em;
+      }
+
 
     #corner-top-left {
       position: absolute;
@@ -1308,6 +1280,10 @@ only screen and (max-device-width : 450px){
     font-family: 'Source Sans Pro';
     font-weight: 600;
     color:#000;
+    font-size: .9em;
+    }
+
+  .close-video {
     font-size: .9em;
     }
 
