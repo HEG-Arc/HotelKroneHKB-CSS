@@ -436,7 +436,8 @@ background: linear-gradient(-225deg, rgba(187,10,52,1) 0%, rgba(121,9,94,1) 35%,
 .close-video {
   float: right;
   padding-right: 1em;
-  font-family: 'Abril Fatface';
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
   color:#000;
   font-size: 2em;
   }
@@ -507,10 +508,13 @@ ul.namelist li {
 }
 
 .panolens-infospot{
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 0px 0px 3px;
   font-family:'Source Sans Pro';
   font-weight:500;
-  font-size: 0.9em;
+  font-size:0.9em;
 }
+
 
 /* LINK STYLES */
 
@@ -655,14 +659,12 @@ a.linktitle:active {
 
 a.linkrooms:link {
 	text-decoration:none;
-  color: black;
-  text-shadow: 2px 2px white;
+  color: white;
 }
 
 a.linkrooms:visited {
 	text-decoration:none;
-  color: black;
-  text-shadow: 2px 2px white;
+  color: white;
 }
 
 a.linkrooms:hover {
@@ -792,9 +794,9 @@ only screen and (max-device-width : 2000px){
     }
 
     .rooms {
-        font-size: 4em;
+        font-size: 3.9em;
         letter-spacing: 0.03em;
-        line-height: 2em;
+        line-height: 1.2em;
         font-family: 'Source Sans Pro';
         font-weight: 300;
         margin-right: .3em;
@@ -913,6 +915,14 @@ only screen and (max-device-width : 2000px){
     z-index: 70;
   }
 
+  .footer-hkb{
+    width:200px;
+  }
+
+  .footer-kl{
+    width:155px;
+  }
+
 }
 
 /* Mediaquery 960 px ----------------------------------------------- */
@@ -926,8 +936,8 @@ only screen and (max-device-width : 960px){
   }
 
   .rooms {
-    font-size: 3em;
-    line-height: 2em;
+    font-size: 2.9em;
+    line-height: 1.5em;
     margin-right: .2em;
     margin-left: .2em;
     padding: 0.3em;
@@ -1091,7 +1101,7 @@ only screen and (max-device-width : 680px){
 
   .rooms {
     font-size: 2em;
-    line-height: 1.7em;
+    line-height: 1.4em;
     margin-right: .1em;
     margin-left: .1em;
     color: white;
@@ -1260,8 +1270,8 @@ only screen and (max-device-width : 450px){
 }
 
 .rooms{
-  font-size: 1.7em;
-  line-height: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.4em;
 }
 
 .title {
@@ -1285,6 +1295,14 @@ only screen and (max-device-width : 450px){
 
   .close-video {
     font-size: .9em;
+    }
+
+    .footer-hkb{
+      width:130px;
+    }
+
+    .footer-kl{
+      width:90px;
     }
 
 }
